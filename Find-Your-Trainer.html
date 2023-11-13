@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>MyTrainerMatch</title>
+  </head>
+  <body>
+     <!-- NAVBAR -->
+ <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">My Trainer Match</a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="Our-Mission.html">Our Mission</a>
+      <a class="nav-item nav-link" href="Find-Your-Trainer.html">Find your trainer</a>
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <div id="find-your-trainer" class="text-center">
+        <h4 class="mb-4">Find your trainer</h4>
+        <form method="POST" action="/send_email">
+                    <div class="form-group">
+                        <label for="fname">First name:</label>
+                        <input type="text" class="form-control" id="fname" name="fname" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="lname">Last name:</label>
+                        <input type="text" class="form-control" id="lname" name="lname" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="city">Enter the current city you live in:</label>
+                        <input type="text" class="form-control" id="city" name="city" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="height">Height in inches:</label>
+                        <input type="number" class="form-control" id="height" name="height" min="1" max="99" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="weight">Weight in pounds:</label>
+                        <input type="number" class="form-control" id="weight" name="weight" min="1" max="900" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <p>Gender:</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="prefer-not-to-say"
+                                value="Prefer not to say" checked>
+                            <label class="form-check-label" for="prefer-not-to-say">Prefer not to say</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="fitness-goals">What are your fitness goals?</label>
+                        <select class="form-control" name="fitness-goals" id="fitness-goals" required>
+                            <option value="select-one" autofocus>Select one</option>
+                            <option value="lose-fat">Lose fat</option>
+                            <option value="gain-muscle">Gain Muscle</option>
+                            <option value="build-endurance">Build endurance</option>
+                            <option value="build-muscle-and-lose-fat">Build muscle and lose fat</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="fitness-type">How do you like to workout?</label>
+                        <select class="form-control" name="fitness-type" id="fitness-type" required>
+                            <option value="select-one" autofocus>Select one</option>
+                            <option value="weight-training">Weight training</option>
+                            <option value="cardio">Cardio</option>
+                            <option value="HIIT-training">High-intensity interval training</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="athletics">Athletics</option>
+                        </select>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</main>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
